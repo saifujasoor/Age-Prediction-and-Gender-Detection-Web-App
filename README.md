@@ -44,15 +44,17 @@ Make sure you have Python, OpenCV, Flask and PIL installed on your system to run
 ## Project Demo
 ### Project Overview
 
-![s1]
+![s1](https://user-images.githubusercontent.com/76810003/160344080-c08e4f55-c656-4690-89a4-9bad2ba86d54.gif)
 
 ### Live detection
 
-![s2]
+![s3 (2)](https://user-images.githubusercontent.com/76810003/160345542-bbbb6195-03a5-4432-913a-8cd39058e544.gif)
+
 
 ### Detection using image
+![s2](https://user-images.githubusercontent.com/76810003/160344930-321ce7ba-83a7-4252-81a5-e4ba8dc99d7a.gif)
 
-![s3]
+
 
 ## Contact
 [![linkedin-shield]][linkedin]
@@ -66,6 +68,3 @@ Make sure you have Python, OpenCV, Flask and PIL installed on your system to run
 [html-shield]: https://img.shields.io/badge/-HTML-orange?logo=html5&logoColor=white&style=for-the-badge
 [linkedin-shield]: https://img.shields.io/badge/-linkedin-0078B6?logo=linkedin&logoColor=white&style=for-the-badge
 [linkedin]:https://www.linkedin.com/in/saifullahrahimi/
-[1]: ./Demo/s1.gif
-[2]: ./Demo/s2.gif
-[3]: ./Demo/s3.gif
