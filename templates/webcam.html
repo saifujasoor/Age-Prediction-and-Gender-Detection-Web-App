@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel = "icon" href = "https://static2.clutch.co/s3fs-public/logos/logo-400.png?VersionId=0rvPgdxRcR1a6HdVG9eR3RKTJi0V0jai" type = "image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title>Real Time Detection</title>
+    <style>
+        html {
+            background: #100a1c;
+            background-image:
+                radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+                radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+            background-attachment: fixed;
+            color: #6cacc5;
+        }
+        img {
+            margin-left: 110px;
+            padding: 0;
+            width: 80vw;
+            height: 80vh;
+            border: 2px solid #6cacc5;
+            border-radius: 4px;
+        }
+        button {
+            float: left;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'EB Garamond', serif;
+           /*color: #ff1a1a;*/
+            text-shadow: 2px 2px 4px #000000;
+        }
+        /* --- STYLING THE BUTTONS --- */
+        button {
+            border: 0;
+            background: rgba(42,50,113, .28);
+            color: #6cacc5;
+            cursor: pointer;
+            font: inherit;
+            margin: 0.25em;
+            transition: all 0.5s;
+            border-radius: 4px;
+        }
+        /* --- WHEN THE CURSOR HOVERS OVER THE BUTTONS THE COLOR CHNAGES --- */
+        button:hover {
+            background: #201e40;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <a href="/"><button>Home</button></a>
+            <h2>Detecting Age and Gender</h2>
+        </div>
+        
+        <div class="container">   
+            <img src="{{ url_for('video_feed') }}" width="50%">
+        </div>
+    </div>
+</body>
+</html>

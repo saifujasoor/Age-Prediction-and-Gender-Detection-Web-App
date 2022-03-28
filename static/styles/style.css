@@ -1,0 +1,180 @@
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", sans-serif;
+}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.parallax {
+  /* The image used */
+  background-image: url('../assets/face_scan.jpg');
+
+  /* Set a specific height */
+  min-height: 600px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.aj-wide {letter-spacing: 10px;}
+.aj-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+.hr{
+  height:2px;
+  width: 300px;
+  background:rgba(255,255,255,.2);
+}
+
+th {padding-left: 10px;}
+
+/* action */
+
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+
+.action-wrap{
+  width:100%;
+  margin:auto;
+  max-width:525px;
+  min-height:525px;
+  position:relative;
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.action-html{
+  width:100%;
+  height:100%;
+  position:absolute;
+  padding:90px 70px 50px 70px;
+  background: rgba(40,57,101,.9);
+  color:#6a6f8c;
+  font:600 16px/18px 'Open Sans',sans-serif;
+}
+.action-html .live-htm,
+.action-html .photo-htm{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  transform:rotateY(180deg);
+  backface-visibility:hidden;
+  transition:all .4s linear;
+}
+.action-html .live,
+.action-html .photo,
+.action-form .group .check{
+  display:none;
+}
+.action-html .tab,
+.action-form .group .label,
+.action-form .group .button{
+  text-transform:uppercase;
+}
+.action-html .tab{
+  font-size:22px;
+  margin-right:15px;
+  padding-bottom:5px;
+  margin:0 15px 10px 0;
+  display:inline-block;
+  border-bottom:2px solid transparent;
+}
+.action-html .live:checked + .tab,
+.action-html .photo:checked + .tab{
+  color:#fff;
+  border-color:#1161ee;
+}
+.action-form{
+  min-height:345px;
+  position:relative;
+  perspective:1000px;
+  transform-style:preserve-3d;
+}
+.action-form .group{
+  margin-bottom:15px;
+}
+.action-form .group .label,
+.action-form .group .input,
+.action-form .group .button{
+  width:100%;
+  color:#fff;
+  display:block;
+}
+.action-form .group .input,
+.action-form .group .button{
+  border:none;
+  padding:15px 20px;
+  border-radius:25px;
+  background:rgba(255,255,255,.1);
+}
+.action-form .group .label{
+  color:#aaa;
+  font-size:12px;
+}
+.action-form .group .button{
+  background:#1161ee;
+}
+.action-form .group label .icon{
+  width:15px;
+  height:15px;
+  border-radius:2px;
+  position:relative;
+  display:inline-block;
+  background:rgba(255,255,255,.1);
+}
+.action-form .group label .icon:before,
+.action-form .group label .icon:after{
+  content:'';
+  width:10px;
+  height:2px;
+  background:#fff;
+  position:absolute;
+  transition:all .2s ease-in-out 0s;
+}
+.action-form .group label .icon:before{
+  left:3px;
+  width:5px;
+  bottom:6px;
+  transform:scale(0) rotate(0);
+}
+.action-form .group label .icon:after{
+  top:6px;
+  right:0;
+  transform:scale(0) rotate(0);
+}
+.action-form .group .check:checked + label{
+  color:#fff;
+}
+.action-form .group .check:checked + label .icon{
+  background:#1161ee;
+}
+.action-form .group .check:checked + label .icon:before{
+  transform:scale(1) rotate(45deg);
+}
+.action-form .group .check:checked + label .icon:after{
+  transform:scale(1) rotate(-45deg);
+}
+.action-html .live:checked + .tab + .photo + .tab + .action-form .live-htm{
+  transform:rotate(0);
+}
+.action-html .photo:checked + .tab + .action-form .photo-htm{
+  transform:rotate(0);
+}
+
+
+

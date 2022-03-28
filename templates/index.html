@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>Age & Gender Detection Web App</title>
+<link rel = "icon" href = "https://static2.clutch.co/s3fs-public/logos/logo-400.png?VersionId=0rvPgdxRcR1a6HdVG9eR3RKTJi0V0jai" type = "image/x-icon">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/styles/style.css">
+<link rel="stylesheet" href="../static/styles/aj.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="parallax" >
+  <div > <h1 style="font-size:5vw;color:White"> &nbsp;<br><b>Age & Gender  <br> Detection</h1> </b></div>
+</div>
+<br><br><br>
+<div class="action-wrap">
+  <div class="action-html">
+    <input id="tab-1" type="radio" name="tab" class="live" checked><label for="tab-1" class="tab">Real Time</label>
+    <input id="tab-2" type="radio" name="tab" class="photo"><label for="tab-2" class="tab">Photo Detection</label>
+    <div class="action-form">
+      <div class="live-htm">
+        <div class="group">
+          <br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="https://static2.clutch.co/s3fs-public/logos/logo-400.png?VersionId=0rvPgdxRcR1a6HdVG9eR3RKTJi0V0jai" height="120" width="120">
+          <br><br>
+          <a href='/webcam'><input type="submit" class="button" value="live Detection"></a> 
+        </div>
+      </div>
+      
+      <div class="photo-htm">
+        <form action="/upload" method="POST" enctype="multipart/form-data" style="color: #aaa">
+          <br><br>Please Select the image:<br><br><br>
+          <input type="file" name="fileToUpload" id="fileToUpload">
+          <br><br><br><br>
+        <div class="group">
+          <input type="submit" class="button" value="Detect" name="submit">
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="aj-content aj-container aj-padding-64" id="about">
+   <br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+  
+
+<!-- Footer -->
+<footer class="aj-center aj-black aj-padding-64 aj-opacity aj-hover-opacity-off">
+  <div class="aj-section" style="text-align: left; padding-left: 10px">
+    <p>Follow me for more updates :</p>
+    <div class="hr"></div>
+    <table>
+      <tr>
+        <th><p>Saifullah Rahimi</th>
+        <th>
+          <a href="https://github.com/saifujasoor"><i class="fa fa-github aj-hover-opacity"></i></a>
+          <a href=""><i class="fa fa-instagram aj-hover-opacity"></i></a>
+          <a href=""><i class="fa fa-twitter aj-hover-opacity"></i></a>
+          <a href="https://www.linkedin.com/in/saifullahrahimi/"><i class="fa fa-linkedin aj-hover-opacity"></i></a></th>
+        </p>
+      </tr>
+    </table>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+</html>
