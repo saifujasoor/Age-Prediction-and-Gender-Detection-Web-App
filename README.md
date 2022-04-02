@@ -19,13 +19,13 @@ OpenCV is short for Open Source Computer Vision. Intuitively by the name, it is 
 ### What is a CNN?
 A Convolutional Neural Network is a deep neural network (DNN) widely used for the purposes of image recognition and processing and NLP. Also known as a ConvNet, a CNN has input and output layers, and multiple hidden layers, many of which are convolutional. In a way, CNNs are regularized multilayer perceptrons.
 
-### Gender and Age Detection Python Project- Objective
+### Gender  Detection and Age Prediction- Objective
 To build a gender and age detector that can approximately guess the gender and age of the person (face) in a picture using Deep Learning on the Adience dataset.
 
-### Gender and Age Detection – About the Project
-In this Python Project, we will use Deep Learning to accurately identify the gender and age of a person from a single image of a face. We will use the models trained by Tal Hassner and Gil Levi. The predicted gender may be one of ‘Male’ and ‘Female’, and the predicted age may be one of the following ranges- (0 – 2), (4 – 6), (8 – 12), (15 – 20), (25 – 32), (38 – 43), (48 – 53), (60 – 100) (8 nodes in the final softmax layer). It is very difficult to accurately guess an exact age from a single image because of factors like makeup, lighting, obstructions, and facial expressions. And so, we make this a classification problem instead of making it one of regression.
+### Gender  Detection and Age Prediction – About the Project
+Hello Guys,Let’s see an interesting application of Deep Learning applied to faces. We will estimate the age and figure out the gender of the person by live detecting or  from a single image, Hereby  I'm sharing a python web app  project “ Age-Prediction-and-Gender-Detection ” . I have used the models trained by Tal Hassner and Gil Levi. The predicted gender may be one of ‘Male’ and ‘Female’, and the predicted age may be one of the following ranges- (0 – 2), (4 – 6), (8 – 12), (15 – 20), (25 – 32), (38 – 43), (48 – 53), (60 – 100). The front-end of the application is built using HTML, CSS and JavaScript The back-end is built using Flask and Open CV. It is very difficult to accurately guess an exact age from a single image because of factors like makeup, lighting, obstructions, and facial expressions. And so, we make this a classification problem instead of making it one of regression.
 
-Ref: https://data-flair.training/blogs/python-project-gender-age-detection/ and Umang Tiwari
+Ref: https://data-flair.training/ and Umang Tiwari
 
 ## Getting Started
 
