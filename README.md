@@ -34,14 +34,22 @@ Make sure you have Python, OpenCV, Flask and PIL installed on your system to run
 
 ### Execution guide
 1. Download the contents of the repository
-2. Make sure the necessary prerequisites are installed on your system
-3. Type the following command inside the directory on your terminal
+2. Install the necessary prerequisites are by following command:-
+
+```
+pip3 install -r requirements.txt
+
+```
+
+4. Type the following command inside the directory on your terminal
   ```sh
   python3 app.py
   ```
+  
 4. Click http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
 ## Project Demo
+
 ### Project Overview
 
 ![s1](https://user-images.githubusercontent.com/76810003/160344080-c08e4f55-c656-4690-89a4-9bad2ba86d54.gif)
